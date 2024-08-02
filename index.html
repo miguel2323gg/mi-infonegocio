@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro al Curso Gratuito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, button, p, a {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        input, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <h1>Registro al Curso Gratuito</h1>
-    <form action="https://formspree.io/f/{f/xnnadbkg}" method="POST">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br>
-
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required><br>
-
-        <button type="submit">Enviar</button>
-    </form>
-    <!-- Enlace a la página de personalización -->
-    <p>Después de registrarte, <a href="customize.html">personaliza tu plan aquí</a>.</p>
+    <div class="container">
+        <h1>Registro al Curso Gratuito</h1>
+        <form action="https://formspree.io/f/{f/xnnadbkg}" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Después de registrarte, <a href="customize.html">personaliza tu plan aquí</a>.</p>
+    </div>
 </body>
 </html>
